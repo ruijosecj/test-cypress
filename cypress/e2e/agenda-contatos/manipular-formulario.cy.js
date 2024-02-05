@@ -14,6 +14,7 @@ describe('Testes de inclusao, exclusao e alteracao do contato', () => {
 
     it('Deve deletar contato', () => {
         cy.get(':nth-child(2) > .sc-gueYoa > .delete').click()
+        cy.wait(1000)
     })
     
     it('Deve atualizar contato', () => {
