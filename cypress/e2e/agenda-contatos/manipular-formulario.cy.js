@@ -17,7 +17,7 @@ describe('Testes de inclusao, exclusao e alteracao do contato', () => {
     })
     
     it('Deve atualizar contato', () => {
-        cy.get('.edit').click()
+        cy.get('.edit').eq(0).click();
         cy.get('[type="text"]').clear().type('Rui')
         cy.get('[type="email"]').clear().type('rui@gmail.com')
         cy.get('[type="tel"]').clear().type('85999670420')
